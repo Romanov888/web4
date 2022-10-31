@@ -1,151 +1,182 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width">
-    <title>web4</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (min-width: 700px)" href="desktop.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="page-header">
-            <header> 
-                Название
-                <img src="1.png" alt="logo" title="logo" class="float-left">
-            </header>
-        </div>
-    </div>
-       
-    <div class="container">
-        <nav>
-            <ul>
-                <li class="liNav"><a href="https://example.com">Ссылка1</a></li>
-                <li class="liNav"><a href="https://example.com">Ссылка2</a></li> 
-                <li class="liNav"><a href="https://example.com">Ссылка3</a></li>
-            </ul>
-        </nav>
-    </div>
+	<header>
+		<div class="container-fluid page" style="background-color: #99aab5">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 offset-5 col-md-4 offset-md-1 order-2">
+						<div class="h-100 py-3">
+							<div id="line">
+								<a>Название</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1 col-md-4 order-1">
+						<div class="h-100 py-3">
+							<div id="logo">
+								<img src="1.png" alt="logo" title="logo"/>
+							</div>
 
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<nav>
+		<div class="container" style="background-color: #99aab5">
+			<div class="row m-3">
+				<div class="col-12 col-md-12">
+					<ul class="menu nav flex-column nav flex-md-row nav justify-content-md-center">
+						<li class="mr-4"><a href="https://example.com">Ссылка1</a></li>
+						<li class="mr-4"><a href="https://example.com">Ссылка2</a></li>
+						<li class="mr-4"><a href="https://example.com">Ссылка3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="background-color: #99aab5">
+		<div class="row">
+			<div class="col-md-6 order-2">
+				<h4 id="Ссылки">Ссылки</h4>
+				<ol>
+					<li> <a href = "http://example.com">Абсолютная гиперссылка</a></li>
+					<li> <a href = "https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
+					<li> <a href = "ftp://example.com/file">Ссылка на файл без авторизации</a> </li>
+					<li> <a href = "ftp://login:password@example.com/file">Ссылка на файл ftp с авторизацией</a> </li>
+					<li> <a href = "https://example.com/page#element_id">Ссылка на фрагмент некоторого сайта</a> </li>
+					<li> <a href = "#start">ссылка на фрагмент страницы</a></li>
+					<li> <a href = "https://example.com?par1&par2">Ссылка с двумя параметрами</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="container__row d-flex flex-column">
+			<div class="row mt-3 order-3 order-sm-2" style="background-color: #99aab5">
+				<div class="col-12 col-md-6">
+					<div class="table">
+						<h4 id="Таблица">Таблица</h4>
+						<table class="table table-bordered border-primary">
+							<tr class="even">
+								<th>Column1</th>
+								<th>Column2</th>
+								<th>Column3</th>
+							</tr>
+							<tr>
+								<td colspan="3" style="text-align: center;">UCell</td>
+							</tr>
+							<tr class="even">
+								<td rowspan="3">UCell</td>
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+							<tr>
+								
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+							<tr class="even">
+								
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+							<tr>
+								<td>Cell1</td>
+								<td>Cell2</td>
+								<td>Cell3</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
 
-       
-        <div class="">
-            <ol class="">
-                <li> <a href = "http://example.com">Абсолютная гиперссылка</a></li>
-                <li> <a href = "https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
-                <li> <a href = "ftp://example.com/file">Ссылка на файл без авторизации</a> </li>
-                <li> <a href = "ftp://login:password@example.com/file">Ссылка на файл ftp с авторизацией</a> </li>
-                <li> <a href = "https://example.com/page#element_id">Ссылка на фрагмент некоторого сайта</a> </li>
-                <li> <a href = "#start">ссылка на фрагмент страницы</a></li>
-                <li> <a href = "https://example.com?par1&par2">Ссылка с двумя параметрами</a></li>
-            </ol>
-        </div>
-        
-        <div class="form-1">
-            <form action="/" method="POST" class="">
-
-                <label>
-                    Имя:<br />
-                    <input class="" name="field-name-1" value="Имя" />
-                </label><br />
-
-                <label>
-                    email:<br />
-                    <input name="field-email" type="email" placeholder="Введите вашу почту" />
-                </label><br />
-
-                <label>
-                    Дата рождения:<br />
-                    <input name="field-date" value="2022-09-13" type = "date" />
-                </label><br/>
-
-                Пол:<br/>
-                <label>
-                    <input type="radio" checked="checked" name="r1" value="м" />
-                    М
-                </label><br>
-                <label>
-                    <input type="radio" name="r1" value="ж" />
-                    Ж
-                </label><br />
-
-                Кол-во конечностей:<br />
-                <label>
-                    <input type="radio" checked="checked" name="count" value="м4" />
-                    меньше 4
-                </label> <br />
-                <label>
-                    <input type="radio" name="count" value="4" />
-                    4
-                </label> <br />
-                <label>
-                    <input type="radio" name="count" value="б4" />
-                    больше 4
-                </label><br />
-                <br />
-                <label>
-                    Способности:
-                    <br />
-                    <select name="field-name-4[]" multiple="multiple">
-                        <option value="Значение1">бессмертие</option>
-                        <option value="Значение2" selected="selected">прохождение сквозь стены</option>
-                        <option value="Значение3" selected="selected">левитация</option>
-                    </select>
-                </label><br />
-
-                <label>
-                    Биография:<br />
-                    <textarea class="" name="field-name-2"></textarea>
-                </label><br />
-
-                <label>
-                    <input type="checkbox" checked="checked" name="c1" />
-                    С контрактом ознакомлен (а)
-                </label><br />
-
-                <input type="submit" value="Отправить" />
-            </form>
-        </div> 
-        
-        <table class="tabl-1">
-            <tr class="tabl-chet">
-                <th>Column1</th>
-                <th>Column2</th>
-                <th>Column3</th>
-            </tr>
-            <tr class="tabl-1">
-                <td colspan="3" style="text-align: center;">UCell</td>
-            </tr>
-            <tr class="tabl-chet">
-                <td rowspan="3">UCell</td>
-                <td>Cell2</td>
-                <td>Cell3</td>
-            </tr>
-            <tr class="tabl-1">
-                
-                <td>Cell2</td>
-                <td>Cell3</td>
-            </tr>
-            <tr class="tabl-chet">
-                
-                <td>Cell2</td>
-                <td>Cell3</td>
-            </tr>
-            <tr class="tabl-1">
-                <td>Cell1</td>
-                <td>Cell2</td>
-                <td>Cell3</td>
-            </tr>
-        </table>
-
-        <footer id="" class="">
-            Romanov
-        </footer>
-
+			<div class="row mt-3 order-2 order-sm-3" style="background-color: #99aab5">
+				<div class="col-12 col-md-6">
+					<h4 id="Форма">Форма HTML</h4>
+					<form action="URL_отправки_данных" method="POST">
+						<label>
+							Имя:<br />
+							<input class="" name="field-name-1" value="Имя" />
+						</label><br />
+		
+						<label>
+							email:<br />
+							<input name="field-email" type="email" placeholder="Введите вашу почту" />
+						</label><br />
+		
+						<label>
+							Дата рождения:<br />
+							<input name="field-date" value="2022-09-13" type = "date" />
+						</label><br/>
+		
+						Пол:<br/>
+						<label>
+							<input type="radio" checked="checked" name="r1" value="м" />
+							М
+						</label><br>
+						<label>
+							<input type="radio" name="r1" value="ж" />
+							Ж
+						</label><br />
+		
+						Кол-во конечностей:<br />
+						<label>
+							<input type="radio" checked="checked" name="count" value="м4" />
+							меньше 4
+						</label> <br />
+						<label>
+							<input type="radio" name="count" value="4" />
+							4
+						</label> <br />
+						<label>
+							<input type="radio" name="count" value="б4" />
+							больше 4
+						</label><br />
+						<br />
+						<label>
+							Способности:
+							<br />
+							<select name="field-name-4[]" multiple="multiple">
+								<option value="Значение1">бессмертие</option>
+								<option value="Значение2" selected="selected">прохождение сквозь стены</option>
+								<option value="Значение3" selected="selected">левитация</option>
+							</select>
+						</label><br />
+		
+						<label>
+							Биография:<br />
+							<textarea class="" name="field-name-2"></textarea>
+						</label><br />
+		
+						<label>
+							<input type="checkbox" checked="checked" name="c1" />
+							С контрактом ознакомлен (а)
+						</label><br />
+		
+						Отправить форму:
+						<input type="submit" value="Отправить" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid page mt-3" style="background-color: #99aab5">
+		<footer class="footer" id="foot">
+			<h4>Романов</h4>
+		</footer>
+	</div>
 </body>
-
 
 </html>
